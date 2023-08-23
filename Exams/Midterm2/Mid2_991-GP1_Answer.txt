@@ -1,0 +1,45 @@
+//GP1
+//READ BLOCK AND ...
+        ORG     100
+        BSA     FUN
+ADS,    HEX     300
+_CNT,   DEC     -100        
+        HLT
+        ORG     200
+FUN,    ----
+        LDA     FUN I
+        STA     PTR
+        ISZ     FUN
+        .
+        LDA     FUN I
+        STA     CNT
+        ISZ     FUN
+        .
+        CLA
+        STA     J
+        .
+LOP,    LDA     PTR I
+        SNA
+        BUN     P
+        BUN     N
+        .
+P,      BUN     F
+        .
+N,      CLE
+        CIL
+        CLE
+        CIR
+        CMA
+        INC
+        STA     PTR I
+        ISZ     J
+        BUN     F
+        .
+F,      ISZ     CNT
+        BUN     LOP
+        LDA     J
+        BUN     FUN I
+PTR,    ----
+CNT,    ----
+J,      ----
+        END

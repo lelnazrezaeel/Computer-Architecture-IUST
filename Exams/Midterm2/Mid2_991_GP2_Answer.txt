@@ -1,0 +1,48 @@
+//INTERRUPT ROUTINE
+        ORG     0
+ZRO,    ----
+        BUN     SRV
+        .
+        ORG     400
+        DEC     0
+        .
+        ORG     200
+        STA     SAC
+        CIR
+        STA     SE
+        .
+OT,     SKO
+        BUN     IP      /FGO = 0    
+OT1,    ION             /FGO = 1
+        BUN     EXT
+        .
+IP,     SKI
+        BUN     I0      /FGI = 0
+        BUN     I1      /FGI = 1
+        .
+I0,     ION
+        BUN     EXT     
+        .
+I1,     INP             
+        STA     PTR I
+        ISZ     PTR
+        ISZ     CNT I   
+        ISZ     CNT I   /EACH TIME WE READ TWO CHARS
+        CMA
+        INC
+        ADD     EOF
+        SZA
+        ION             /ENABLE INTERRUPT AGAIN IF IT'S NOT EOF
+        BUN     EXT
+        .
+EXT,    LDA     SE
+        CIL
+        LDA     SAC
+        .
+        BUN     ZRO I
+SAC,    ----
+SE,     ----
+PTR,    HEX 500
+CNT,    HEX 400
+EOF,    FFFF
+        END
