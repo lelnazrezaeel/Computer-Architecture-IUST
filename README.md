@@ -1,5 +1,5 @@
 # Computer-Architecture-IUST
-My solutions to IUST's Computer Architecture, Spring 2021, Dr. Soriyani.
+My solutions to IUST's Computer Architecture, Spring 2022, Dr. Soriyani.
 
 ## <img width="20" height="20" src="https://img.icons8.com/wired/64/41b883/test-passed.png" alt="test-passed"/> Exams
 ### Final
