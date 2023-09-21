@@ -46,4 +46,4 @@ My solutions to IUST's Computer Architecture, Spring 2022, Dr. Soriyani.
 
 ## <img width="20" height="20" src="https://img.icons8.com/external-smashingstocks-mixed-smashing-stocks/68/41b883/external-Notes-work-from-home-smashingstocks-mixed-smashing-stocks-2.png" alt="external-Notes-work-from-home-smashingstocks-mixed-smashing-stocks-2"/> Notes
 - Description: Resources provided by the professor, including lecture slides, study materials, and additional reading materials.
-- Answers: [Link to Notes](https://github.com/lelnazrezaeel/Computer-Architecture-IUST/tree/main/Notes)
+- [Link to Notes](https://github.com/lelnazrezaeel/Computer-Architecture-IUST/tree/main/Notes)
